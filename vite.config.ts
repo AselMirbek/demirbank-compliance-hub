@@ -4,13 +4,7 @@ import path from "path";
 
 export default defineConfig({
   base: "/demirbank-compliance-hub/",
-  build: {
-    outDir: "docs",
-  },
+  build: { outDir: "docs" },
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  resolve: { alias: { "@": path.resolve(__dirname, "./src") } }
 });
